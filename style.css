@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+:root {
+    --cor-de-fundo: #1B3E6A;
+    --cor-fonte-1: white;
+    --cor-fonte-2: #99BCF7;
+    --cor-fonte-3: #000000;
+    --cor-botao: #4F82C4;
+    --fonte-principal: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: var(--cor-de-fundo);
+    color: var(--cor-fonte-1);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+h3 {
+    padding: 1em 0;
+    font-size: 24px;
+}
+
+h4 {
+    font-weight: 500;
+    font-size:32px;
+}
+
+.mensagem {
+    padding: 0.5em;
+    font-size: 20px;
+}
+
+.box {
+    margin: 1em;
+    padding: 1em 3em;
+    display: flex; /*esse display faz com que a borda não sobreponha*/
+    justify-content: center;
+    border: 2px solid var(--cor-fonte-2);
+    font-size: 32px;
+}
+
+.resposta {
+    margin-top: 1em;
+    font-size: 32px;
+}
+
+.reiniciar {
+    font-weight: 500;
+    margin: 3em auto;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    background: var(--cor-botao);
+    color: var(--cor-fonte-1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        margin: 1em;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .resposta {
+        font-size: 20px;
+    }
+}
