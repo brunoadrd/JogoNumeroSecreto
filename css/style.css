@@ -32,7 +32,7 @@ h2 {
 }
 
 h3 {
-    padding: 1em;
+    padding: 1em 0;
     font-size: 24px;
 }
 
@@ -60,7 +60,6 @@ h4 {
 }
 
 .reiniciar {
-    width: 20%;
     font-weight: 500;
     margin: 3em auto;
     padding: 1em;
@@ -69,4 +68,26 @@ h4 {
     background: var(--cor-botao);
     color: var(--cor-fonte-1);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        margin: 1em;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .resposta {
+        font-size: 22px;
+    }
 }
